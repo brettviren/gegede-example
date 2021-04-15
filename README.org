@@ -74,13 +74,15 @@ The command line interface to GeGeDe can be used to generate geometry and to exp
   $ gegede-cli -o ggdex.gdml ggdex.cfg
 #+END_EXAMPLE
 
+* Another example: ggdex02
 
+The ggdex02 directory and configuration file shows an alternate arrangement where each builder is placed in a separate module file.  This example builds a simple layered scintillation detector, and includes examples for defining a wider range of elements, isotopic mixtures, and mixed materials.  It also shows how to add parameters to logical volumes that will be used to fill
 
+#+BEGIN_EXAMPLE
+<auxilliary auxtype=key" auxvalue="value" />
+#+END_EXAMPLE
 
-
-
-
-
-
-
-
+in GDML.  The ggdex02 example is run using
+#+BEGIN_EXAMPLE
+   $ gegede-cli -o ggdex02.gdml ggdex02.cfg
+#+END_EXAMPLE
